@@ -313,13 +313,24 @@ input:focus, textarea:focus {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 3;
   color: white;
+  display: none;
+}
+.video-demo {
+  max-width: 500px;
+  width: 100%;
+  border: 5px solid #3c5b6e;
 }
 
+.video-demo-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
 /*RESPONSIVE DESING*/
 
 @media screen and (max-width: 767px) {
@@ -387,6 +398,9 @@ input:focus, textarea:focus {
   /*POPRTADA*/
 
   /*GUITARRAS*/
+  .video-demo-contenedor{
+    margin-bottom: 30;
+  }
   .guitarras {
     text-align: center;
   }
@@ -436,10 +450,21 @@ input:focus, textarea:focus {
   .menu ul {
     padding: 0;
   }
+  /*GUITERRAS*/
+  /*GUITERRAS*/
 }
 
 @media screen and (max-width: 500px) {
   /*PORTADA*/
+  .portada .button {
+    display: block;
+  }
+  .precios .header .logotipo {
+    margin: 50px 0;
+  }
+  .burguer-button {
+    display: block;
+  }
   .portada .contenedor {
     position: static;
   }
@@ -452,7 +477,7 @@ input:focus, textarea:focus {
 
   .menu {
     background: rgba(255, 60, 88, .8);
-    position: absolute;
+    position: fixed;
     left: -100%;
     top: 0;
     z-index: 2; /*La propiedad z-index indica el z-order de un elemento y sus descendientes. Cuando varios elementos se superponen, z-order determina cuales cubren a otros. Un elemento con mayor z-index generalmente cubre a otro menor*/
@@ -508,7 +533,15 @@ input:focus, textarea:focus {
   .title-b {
     font-size:
   }
+  .video-responsive-contenedor {
+    margin: 0 10px 30px 10px;
+  }
   /*GUITARRAS*/
+  /*FOOTER*/
+  .col2 {
+    align-items: stretch;
+  }
+  /*FOOTER*/
 }
 
 video {

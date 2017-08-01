@@ -40,10 +40,14 @@
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- Guitarras-->
       <h2>Nuestras Guitarras</h2>
-      <div class="video-responsive-contenedor">
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-      <video src="video/320x240.ogg"></video>
+      <!-- <video src="video/320x240.ogg"></video> -->
       <article class="guitarra"> <!--Guitarra 1-->
         <img data-src="images/invie-acustica.png|images/invie-acustica2x.png"  width="350" alt="Guitarra Invie Acustica" class="derecha">
           <div class="contenedor-guitarra-a">
@@ -146,10 +150,10 @@
       var bLazy = new Blazy({
           selector: 'img'
       });
-      // $burguerButton.addEventListener('touchstart', toggleMenu);
+      // burguerButton.addEventListener('touchstart', toggleMenu);
 
       // function toggleMenu(){
-      //   $menu.classList.toggle('active')
+      //   menu.classList.toggle('active')
       // };
 
       // Gestos touch
