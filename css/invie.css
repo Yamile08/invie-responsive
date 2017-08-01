@@ -333,42 +333,6 @@ input:focus, textarea:focus {
 }
 /*RESPONSIVE DESING*/
 
-@media screen and (max-width: 767px) {
-  /*FOOTER*/
-  .footer .contenedor {
-    display: block;
-  }
-
-  .contacto {
-    margin: 0 auto;
-  }
-  .formulario {
-    display: block;
-    margin:  0 auto;
-    width: 300px;
-  }
-  .intereses label {
-    display: block;
-    font-size: 16px;
-  }
-  .col1 {
-    margin: 0;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    font-size: 16px;
-    padding: 5px;
-  }
-  textarea {
-    width: 100%;
-  }
-  input[type="radio"],
-  input[type="checkbox"] {
-    zoom: 1.5;
-  }
-  /*FOOTER*/
-}
 
 @media screen and (max-width: 800px) { /*Diseño para tablets*/
   /*PRECIOS*/
@@ -426,6 +390,52 @@ input:focus, textarea:focus {
     padding: 0;
   }
   /*GUITARRAS*/
+}
+
+@media screen and (max-width: 767px) {
+  /*FOOTER*/
+  .footer .contenedor {
+    display: block;
+  }
+
+  .contacto {
+    margin: 0 auto;
+    display: block;
+  }
+  .contacto a {
+    display: block;
+  }
+  .formulario {
+    display: block;
+    margin:  0 auto;
+    width: 300px;
+  }
+  .sexo label {
+    display: block;
+  }
+  .intereses label {
+    display: block;
+    font-size: 20px;
+  }
+  .col1 {
+    margin: 0;
+  }
+  input[type="text"] {
+    margin-bottom: 20px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+  textarea {
+    width: 100%;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    zoom: 1.5;
+  }
+  /*FOOTER*/
 }
 
 @media screen and (max-width: 650px) {
