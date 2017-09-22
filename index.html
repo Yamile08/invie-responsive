@@ -12,58 +12,51 @@
     </style>
   </head>
   <body>
-    <section id="portada" class="portada background "> <!--Portada-->
-      <header id="header" class="header contenedor"> <!-- Header -->
-        <figure class="logotipo"> <!-- Logotipo -->
+    <section id="portada" class="InvieHero "> <!--Portada-->
+      <header id="header" class="InvieHero-header u-wrapper"> <!-- Header -->
+        <figure class="InvieHero-logo"> <!-- Logotipo -->
           <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo">
         </figure>
-        <span class="burguer-button icon-menu" id="burguer-button"></span>
-         <nav class="menu" id="menu">  <!--Menu -->
-           <ul>  <!--Lista -->
-             <li>  <!--Elementos de la lista -->
+        <span class="InvieHero-btn icon-menu" id="burguer-button"></span>
+         <nav class="InvieHero-navbar" id="menu">  <!--Menu -->
+           <ul class="InvieHero-menu">  <!--Lista -->
+             <li class="InvieHero-menu-item">  <!--Elementos de la lista -->
               <a href="index.html">Home</a>  <!--Enlace-->
             </li>
-            <li>
+            <li class="InvieHero-menu-item">
               <a href="#guitarras">Guitarras</a>
             </li>
-            <li>
+            <li class="InvieHero-menu-item">
               <a href="precios.html">Precios</a>
             </li>
           </ul>
         </nav>
       </header>
-      <div class="contenedor">
-        <h1 class="titulo">Guitarras <span>Invie</span>sibles</h1> <!--Titulo-->
-        <h3 class="title-a">se la estrella de Rock que siempre quisiste ser </h3>
-        <a type="button" href="#guitarras" class="button" name="button">Conoce mas</a>
+      <div class="InvieHero-copy u-wrapper">
+        <h1 class="InvieHero-copy-title">Guitarras <span>Invie</span>sibles</h1> <!--Titulo-->
+        <h3 class="InvieHero-copy-subtitle">se la estrella de Rock que siempre quisiste ser </h3>
+        <a class="InvieHero-copy-btn" type="button" href="#guitarras" name="button">Conoce mas</a>
       </div>
     </section>
-    <section id="guitarras" class="guitarras contenedor"> <!-- Guitarras-->
-      <h2>Nuestras Guitarras</h2>
-      <div class="video-demo-contenedor">
-        <div class="video-demo">
-          <div class="video-responsive-contenedor">
-            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+    <section id="guitarras" class="InvieGuitars u-wrapper"> <!-- Guitarras-->
+      <h2 class="InvieGuitars-title">Nuestras Guitarras</h2>
       <!-- <video src="video/320x240.ogg"></video> -->
-      <article class="guitarra"> <!--Guitarra 1-->
-        <img data-src="images/invie-acustica.png|images/invie-acustica2x.png"  width="350" alt="Guitarra Invie Acustica" class="derecha">
-          <div class="contenedor-guitarra-a">
-            <h3 class="title-b">Invie Acustica</h3>
-            <ol>
+      <article class="InvieGuitars-item"> <!--Guitarra 1-->
+        <img class="InvieGuitars-item-img" data-src="images/invie-acustica.png|images/invie-acustica2x.png"  width="350" alt="Guitarra Invie Acustica" >
+          <div class="InvieGuitars-item-container">
+            <h3 class="InvieGuitars-item-title">Invie Acustica</h3>
+            <ol class="InvieGuitars-item-list">
               <li>Estilo Vintage</li>
               <li>Madera pura</li>
               <li>Incluye estuche invisible de aluminio</li>
             </ol>
           </div>
       </article>
-      <article class="guitarra b"> <!--Guitarra 2-->
-        <img data-src="images/invie-classic.png|images/invie-classic2x.png"  width="350" alt="Guitarra Invie Classic" class="izquierda">
-          <div class="contenedor-guitarra-b">
-            <h3 class="title-b">Invie Classic</h3>
-            <ol>
+      <article class="InvieGuitars-item"> <!--Guitarra 2-->
+        <img class="InvieGuitars-item-img" data-src="images/invie-classic.png|images/invie-classic2x.png"  width="350" alt="Guitarra Invie Classic">
+          <div class="InvieGuitars-item-container">
+            <h3 class="InvieGuitars-item-title">Invie Classic</h3>
+            <ol class="InvieGuitars-item-list">
               <li>Estilo Vintage</li>
               <li>Liviana</li>
               <li>Inicia tu camino como Rockstar</li>
@@ -71,46 +64,46 @@
           </div>
       </article>
     </section>
-    <footer class="footer">
-      <div class="contenedor">
-          <div class="contacto">
-            <img data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco">
-            <a href="tel:+573045286019"><strong>Telefono</strong><span>3045286019</span></a>
-            <a href="mailto:contacto@invie.com"><strong>E-mail</strong>contacto@invie.com</a>
+    <footer class="InvieFooter">
+      <div class="InvieFooter-container u-wrapper">
+          <div class="InvieFooter-contact">
+            <img class="InvieFooter-logo" data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco">
+            <a class="InvieFooter-link" href="tel:+573045286019"><strong>Telefono</strong><span>3045286019</span></a>
+            <a class="InvieFooter-link" href="mailto:contacto@invie.com"><strong>E-mail</strong>contacto@invie.com</a>
           </div>
-          <form class="formulario" >
-            <div class="col1">
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" value="" required id="nombre">
-              <label for="email">E-mail</label>
-              <input type="email" name="email" value="" required id="email">
+          <form class="InvieFooter-form" >
+            <div class="InvieFooter-form-column">
+              <label class="InvieFooter-form-label" for="nombre">Nombre</label>
+              <input class="InvieFooter-form-input InvieFooter-form-input--text" type="text" name="nombre" value="" required id="nombre">
+              <label class="InvieFooter-form-label" for="email">E-mail</label>
+              <input class="InvieFooter-form-input InvieFooter-form-input--text" type="email" name="email" value="" required id="email">
               <div class="sexo">
-                <label for="mujer">
-                  <input type="radio" checked name="sexo" value="mujer" id="mujer">Mujer
+                <label class="InvieFooter-form-label" for="mujer">
+                  <input class="InvieFooter-form-input InvieFooter-form-input--check InvieFooter-form-input--radio" type="radio" checked name="sexo" value="mujer" id="mujer">Mujer
                 </label>
-                <label for="hombre">
-                  <input type="radio" name="sexo" value="hombre" id="hombre">Hombre
+                <label class="InvieFooter-form-label" for="hombre">
+                  <input class="InvieFooter-form-input InvieFooter-form-input--check InvieFooter-form-input--radio" type="radio" name="sexo" value="hombre" id="hombre">Hombre
                 </label>
               </div>
               <div class="intereses">
-                <label for="cotizacion">
-                  <input type="checkbox" checked name="intereses" value="cotizacion" id="cotizacion">Cotizacion
+                <label class="InvieFooter-form-label" for="cotizacion">
+                  <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" checked name="intereses" value="cotizacion" id="cotizacion">Cotizacion
                 </label>
-                <label for="reclamos">
-                  <input type="checkbox" name="intereses" value="reclamos" id="reclamos">Reclamos
+                <label class="InvieFooter-form-label" for="reclamos">
+                  <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" name="intereses" value="reclamos" id="reclamos">Reclamos
                 </label>
-                <label for="comentarios">
-                  <input type="checkbox" name="intereses" value="comentarios" id="comentarios">Comentarios
+                <label class="InvieFooter-form-label" for="comentarios">
+                  <input class="InvieFooter-form-input InvieFooter-form-input--textarea" type="checkbox" name="intereses" value="comentarios" id="comentarios">Comentarios
                 </label>
-                <label for="otros">
-                  <input type="checkbox" name="intereses" value="otros" id="otros">Otros
+                <label class="InvieFooter-form-label" for="otros">
+                  <input class="InvieFooter-form-input" type="checkbox" name="intereses" value="otros" id="otros">Otros
                 </label>
               </div>
             </div>
-            <div class="col2">
-              <label for="comentarios">Comentarios</label>
-              <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-              <input type="submit" name="" value="Enviar" class="button">
+            <div class="InvieFooter-form-column">
+              <label class="InvieFooter-form-label" for="comentarios">Comentarios</label>
+              <textarea class="InvieFooter-form-input" name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+              <input class="InvieFooter-form-btn" type="submit" name="" value="Enviar" class="button">
             </div>
           </form>
       </div>
