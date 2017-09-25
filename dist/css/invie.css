@@ -1,8 +1,17 @@
+/*--Custom Media queries*/
+
 .InvieHero {
-  background-color: #466173;
+  background: url('../images/background.png') #466173;
   padding: 20px;
   height: 500px;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+.InvieHero {
+    background-image: url('../images/background2x.png')
+}
+  }
 
 .InvieHero-header {
     display: -webkit-box;
