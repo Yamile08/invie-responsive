@@ -1,3 +1,7 @@
 body {
   background: red;
 }
+.claseTest {
+  display: flex;
+  transition: all 0.3s ease;
+}
